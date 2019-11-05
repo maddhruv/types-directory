@@ -1,0 +1,21 @@
+{
+  "name": "types-directory",
+  "version": "0.1.0",
+  "description": "Directory of all DefinitelyTyped types",
+  "main": "index.js",
+  "scripts": {
+    "start": "node collect.js"
+  },
+  "keywords": [
+    "types",
+    "DefinitelyTyped",
+    "typescript",
+    "directory"
+  ],
+  "author": "Dhruv Jain <dhruvjainpenny@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "simple-git": "^1.126.0"
+  }
+}
