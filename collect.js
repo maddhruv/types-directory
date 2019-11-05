@@ -4,7 +4,7 @@ const git = require('simple-git')()
 
 async function download () {
   const path = './disco'
-  await git.clone('git@github.com:DefinitelyTyped/DefinitelyTyped.git', path)
+  await git.clone('https://github.com/DefinitelyTyped/DefinitelyTyped', path)
   return path
 }
 
