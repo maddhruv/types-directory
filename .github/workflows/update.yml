@@ -1,0 +1,46 @@
+name: cron
+
+on:
+  schedule:
+    - cron: '* * * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '13.x'
+      
+      - name: Install
+        run: |
+          npm install
+      
+      - name: Clone
+        run: |
+          git clone https://github.com/DefinitelyTyped/DefinitelyTyped --depth 1
+
+      - name: Collect
+        run: |
+          npm start
+        
+      - name: Update
+        run: |
+          npm run update
+
+      - name: Create .npmrc
+        run: |
+          echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      
+      - name: Publish
+        run: |
+          npm publish
+
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

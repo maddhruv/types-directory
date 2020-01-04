@@ -4,7 +4,8 @@
   "description": "Directory of all DefinitelyTyped types",
   "main": "index.js",
   "scripts": {
-    "start": "node collect.js"
+    "start": "node collect.js",
+    "update": "node release.js"
   },
   "keywords": [
     "types",
@@ -13,5 +14,8 @@
     "directory"
   ],
   "author": "Dhruv Jain <dhruvjainpenny@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "simple-git": "^1.129.0"
+  }
 }
