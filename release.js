@@ -1,16 +1,21 @@
-const git = require('simple-git/promise')
-const { exec } = require('child_process')
+const git = require('simple-git/promise');
+const { execSync } = require('child_process');
 
-git()
-  .status()
-  .then(s => {
-    if (!s.modified.includes('directory.json')) {
-      git()
-        .add('./*')
+(async function () {
+  const files = await git().status()
+  if(files.modified.includes('directory.json')) {
+    await git().add('./*')
 
-      git() 
-        .commit(':new_moon_with_face: update directory')
-      
-      exec('npm version minor')
-    }
-  })
+    console.log('GIT ADD')
+
+    await git().commit(':new_moon_with_face: update directory')
+
+    console.log('GIT committed')
+
+    console.log(require('./package.json').version)
+
+    await execSync('npm version minor')
+
+    console.log(require('./package.json').version)
+  }
+})();
