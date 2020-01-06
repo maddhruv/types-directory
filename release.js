@@ -21,5 +21,7 @@ const { execSync } = require('child_process');
     await execSync('npm version minor')
 
     console.log(require('./package.json').version)
+  } else {
+    process.exit(1)
   }
 })();
