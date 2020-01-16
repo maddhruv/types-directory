@@ -1,6 +1,6 @@
 {
   "name": "types-directory",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Directory of all DefinitelyTyped types",
   "main": "index.js",
   "scripts": {
