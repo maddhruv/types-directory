@@ -6348,6 +6348,7 @@
     "yarnpkg__lockfile",
     "yauzl",
     "yauzl-promise",
+    "yawn-yaml",
     "yayson",
     "yazl",
     "ydn-db",
