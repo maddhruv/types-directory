@@ -2,7 +2,7 @@
   "name": "types-directory",
   "version": "0.22.1",
   "description": "Directory of all DefinitelyTyped types",
-  "main": "index.js",
+  "main": "directory.json",
   "scripts": {
     "start": "node collect.js",
     "update": "node release.js"

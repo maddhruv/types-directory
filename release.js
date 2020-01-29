@@ -1,27 +1,27 @@
-const git = require('simple-git/promise');
-const { execSync } = require('child_process');
+const git = require("simple-git/promise");
+const { execSync } = require("child_process");
 
-(async function () {
-  const files = await git().status()
-  if(files.modified.includes('directory.json')) {
-    await git().addConfig('user.email', 'dhruvjainpenny@gmail.com')
-    
-    await git().addConfig('user.name', 'maddhruv')
-    
-    await git().add('./*')
+(async function() {
+  const files = await git().status();
+  if (files.modified.includes("directory.json")) {
+    await git().addConfig("user.email", "dhruvjainpenny@gmail.com");
 
-    console.log('GIT ADD')
+    await git().addConfig("user.name", "maddhruv");
 
-    await git().commit(':new_moon_with_face: update directory')
+    await git().add("./*");
 
-    console.log('GIT committed')
+    console.log("GIT ADD");
 
-    console.log(require('./package.json').version)
+    await git().commit(":new_moon_with_face: update directory");
 
-    await execSync('npm version minor')
+    console.log("GIT committed");
 
-    console.log(require('./package.json').version)
+    console.log(require("./package.json").version);
+
+    await execSync("npm version minor");
+
+    console.log(require("./package.json").version);
   } else {
-    process.exit(1)
+    process.exit(1);
   }
 })();
