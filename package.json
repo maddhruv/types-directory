@@ -17,5 +17,13 @@
   "license": "ISC",
   "devDependencies": {
     "simple-git": "^1.129.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maddhruv/types-directory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maddhruv/types-directory/issues"
+  },
+  "homepage": "https://github.com/maddhruv/types-directory#readme"
 }
