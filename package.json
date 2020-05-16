@@ -1,6 +1,6 @@
 {
   "name": "types-directory",
-  "version": "0.94.0",
+  "version": "0.95.0",
   "description": "Directory of all DefinitelyTyped types",
   "main": "directory.json",
   "scripts": {
