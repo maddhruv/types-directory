@@ -12,7 +12,7 @@ const { execSync } = require("child_process");
 
     console.log("GIT ADD");
 
-    await git().commit(":new_moon_with_face: update directory");
+    await git().commit(":new_moon_with_face:  update directory");
 
     console.log("GIT committed");
 
