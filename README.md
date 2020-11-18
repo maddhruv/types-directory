@@ -16,6 +16,10 @@ const { types } = require('types-directory')
 console.log(types) // Array of all the types available
 ```
 
+## Related
+
+- [Install Types](https://github.com/ClearTax/install-types) - Auto install (uninstall) typings for your package dependencies.
+
 ## Contributing
 
 Want to update the directory?
