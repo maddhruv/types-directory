@@ -11,9 +11,9 @@ Directory of all DefinitelyTyped types
 The module exports an array of all the types available
 
 ```js
-const { types } = require('types-directory')
+const { types } = require("types-directory");
 
-console.log(types) // Array of all the types available
+console.log(types); // Array of all the types available
 ```
 
 ### CDN
@@ -24,7 +24,7 @@ curl https://cdn.jsdelivr.net/gh/maddhruv/types-directory/directory.json
 
 ## Related
 
-- [Install Types](https://github.com/ClearTax/install-types) - Auto install (uninstall) typings for your package dependencies.
+- [types-sync](https://github.com/maddhruv/types-sync) - Keep your types in sync with DefinitelyTyped - auto install/uninstall types for dependencies on postinstall.
 
 ## Contributing
 
