@@ -1,6 +1,6 @@
 {
   "name": "types-directory",
-  "version": "0.310.0",
+  "version": "0.311.0",
   "description": "Directory of all DefinitelyTyped types",
   "main": "directory.json",
   "types": "index.d.ts",
