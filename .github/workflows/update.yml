@@ -2,8 +2,8 @@ name: update-directory
 
 on:
   schedule:
-    # Run every sunday
-    # - cron: "0 0 * * 0"
+    # Run every 1st of the month
+    - cron: "0 0 1 * *"
   workflow_dispatch:
 
 jobs:
