@@ -6,8 +6,8 @@
   "types": "index.d.ts",
   "scripts": {
     "start": "node collect.js",
-    "update": "node release.js",
-    "prepublishOnly": "package-ok"
+    "prepublishOnly": "package-ok",
+    "release": "release-it"
   },
   "keywords": [
     "types",
@@ -20,7 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "prepublish-ok": "^0.5.0",
-    "simple-git": "^3.28.0"
+    "release-it": "^19.0.5"
   },
   "repository": {
     "type": "git",
