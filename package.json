@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node collect.js",
     "prepublishOnly": "package-ok",
-    "release": "release-it"
+    "release": "release-it minor"
   },
   "keywords": [
     "types",
